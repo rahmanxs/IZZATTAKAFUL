@@ -1,0 +1,55 @@
+@charset "utf-8";
+/* CSS Document */
+
+/**************creating the hover opacity image *************/
+
+
+.container {
+  position: relative;
+  width: 98%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #dfc8b3;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.container:hover .overlay {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.text {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+	
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 500px) {
+	#kotak1, #kotak2, #kotak3, #kotak4, #content {width:100%;}
+}
+
+

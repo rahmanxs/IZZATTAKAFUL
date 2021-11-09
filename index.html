@@ -1,0 +1,53 @@
+
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>IZZAT IKHWAN</title>
+<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="extra.css" />
+</head>
+
+<body>
+    <div id="content">
+		<img src="images/IZZAT IKHWAN.gif">
+	</div>
+
+	<div id="navigation">
+		<span id="here">HOME</span> 
+    	<a href="seller.html">CONTACT ME</a>
+		<a href="tutorial.html">ADS</a>
+		<a href="about us.html">ABOUT ME</a>
+	</div>
+	<link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+
+	<!-- Slide Show -->
+<section>
+  <img class="mySlides" src="images/BAYAR DENGAN SAYANG.png" style="width:100%">
+  <img class="mySlides" src="images/Jangan pentingkan diri! manfaat perlindungan takaful bukan sahaja untuk diri kita bahkan orang sekeliling kita..png" style="width:100%">
+  <img class="mySlides" src="images/SAYA TAK MINAT.png" style="width:100%">
+</section>
+
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+
+	<div id="footer">
+		<p>&copy; 2021 IZZAT IKHWAN</p>
+	</div>
+</body>
+</html>

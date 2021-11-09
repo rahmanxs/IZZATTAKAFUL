@@ -1,0 +1,149 @@
+@charset "utf-8";
+/* CSS Document */
+html {  
+	background-image: url("images/Background.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+body {
+font-family: 'Secular One', sans-serif;
+max-width:1280px;
+margin:0px auto;
+font-size: 30px;
+}
+
+#educate {
+ background-color:#ffe001;
+	font-family: 'Secular One', sans-serif;
+	color: black;
+	text-align: center;
+	padding:1px;
+    font-size: 50px;
+}
+
+#container {
+width:100%;
+margin: 0 auto;
+}
+
+#navigation {
+	background-color:black;
+	padding: 2%;
+	text-align: center;
+}
+
+#navigation a {
+	background-color: black;
+	color: white;
+	padding: 2%;
+	text-decoration: none;
+}
+
+#navigation a:hover {
+	background-color: #ffe001;
+	color: black;
+	padding: 2%;
+}
+
+#here {
+	background-color:#ffe001;
+	color: black;
+	padding: 2%;
+}
+
+a {
+  text-decoration: none;
+  color: red;
+}
+
+#footer {
+background-color:black;
+color:white;
+padding :1%;
+font-size:20px;
+text-align:center;
+	width: 96%;
+	float:left;
+}
+
+h2 {
+  text-align: center;
+  font-family: 'Secular One', sans-serif;
+  color: white;
+  font-size: 50px;
+
+}
+
+#kotak1
+{
+	width:50%;
+	float:left;
+	text-align:center;
+}
+
+#kotak2
+{
+	width:50%;
+	float:right;
+	text-align:center;
+}
+
+#gambar {
+width:100%;
+height:auto;
+}
+
+#content {
+align : center;
+}
+
+.button {
+  font-family:"Century Gothic";
+  border-radius: 4px;
+  background-color:#e2b992;
+  border: none;
+  color: #000000;
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 130px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: center;
+  transition: 0.5s;
+
+}
+
+.button span:after {
+  content: '\00bb';
+  position: center;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width:500px) {
+	.text, .text3, #text1, #text2, h1, #content (font-size:2vw;)
+}
+
+
+
+
